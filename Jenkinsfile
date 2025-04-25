@@ -1,10 +1,6 @@
 pipeline{
     agent any 
 
-    environment {
-        OWNER : "OUMAR"
-    }
-
     stages{
         stage("build de l'application"){
             steps{
