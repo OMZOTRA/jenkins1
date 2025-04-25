@@ -1,25 +1,16 @@
 pipeline{
-
     agent any 
 
+    environment {
+        OWNER : "OUMAR"
+    }
+
     stages{
-        stage("build"){
+        stage("build de l'application"){
             steps{
-                echo "etape de build de l'application"
-            }
-        }
-
-        stage("test"){
-            steps{
-                echo "Execution de tests ..."
-            }
-        }
-
-        stage("deploy"){
-            steps{
-                echo "deploment de Application ..."
+                echo "BRANCH_NAME :  ${BRANCH_NAME}"
+                echo "OWNER : ${OWNER}"
             }
         }
     }
-
 }
