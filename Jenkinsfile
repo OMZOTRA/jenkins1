@@ -7,13 +7,11 @@ pipeline{
 
     stages{
         stage("build de l'application ..."){
-           
+           echo "build de l'application"
         }
-
         stage("lancer les tests"){
             echo "test lancer"
         }
-
         stage("Run de mon de l'application"){ 
             echo "lancement de l'application"
         }       
