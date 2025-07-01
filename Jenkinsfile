@@ -7,10 +7,15 @@ pipeline{
 
     stages{
         stage("build de l'application ..."){
-            steps{
-                echo "Hello world"
-                echo "AUTHOR_NAME : ${ AUTHOR_NAME }"
-            }
+           
         }
+
+        stage("lancer les tests"){
+            echo "test lancer"
+        }
+
+        stage("Run de mon de l'application"){ 
+            echo "lancement de l'application"
+        }       
     }
 }
